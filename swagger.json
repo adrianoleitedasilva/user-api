@@ -1,0 +1,31 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "description": "User API Documentation",
+    "version": "1.0.0",
+    "title": "User API"
+  },
+  "host": "localhost:3000",
+  "basePath": "/",
+  "tags": [
+    {
+      "name": "users",
+      "description": "User management"
+    }
+  ],
+  "paths": {
+    "/users": {
+      "get": {
+        "tags": [
+          "users"
+        ],
+        "summary": "Get all users",
+        "responses": {
+          "200": {
+            "description": "List of users"
+          }
+        }
+      }
+    }
+  }
+}
